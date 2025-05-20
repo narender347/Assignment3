@@ -1,5 +1,6 @@
 # Assignment3
 Running the Notebook
+
 This notebook is structured in a way that all cells can be executed sequentially without modification. You may also use the Run All Cells option for convenience. However, please be cautious when executing WandB sweep cells at the end, as they may trigger multiple training runs.
 
 Running the Model Without WandB
@@ -14,6 +15,7 @@ model = test_on_dataset(language="hi",
                         units=256,
                         dropout=0.2,
                         attention=False)
+
 Running the Model With WandB Sweep
 To perform a hyperparameter sweep using WandB, follow these steps:
 
@@ -34,6 +36,7 @@ sweep_config = {
         } 
     }
 }
+
 2. Create the Sweep:
 
 sweep_id = wandb.sweep(sweep_config, project="DA6401_Assignment3")
