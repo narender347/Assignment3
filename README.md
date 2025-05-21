@@ -1,4 +1,6 @@
 # Assignment3
+WANDB REPORT LINK : https://wandb.ai/ns24z347-indian-institute-of-technology-madras/Assignment3/reports/Roll-No-NS24Z347-Assignment-3--VmlldzoxMjgwMDYyMA
+
 Running the Notebook
 
 This notebook is structured in a way that all cells can be executed sequentially without modification. You may also use the Run All Cells option for convenience. However, please be cautious when executing WandB sweep cells at the end, as they may trigger multiple training runs.
@@ -74,4 +76,3 @@ model = test_on_dataset(language="hi",
                         attention=True,
                         save_outputs= "Eng_to_Hin_With_att.csv")
 
-WANDB Report link: https://wandb.ai/ns24z347-indian-institute-of-technology-madras/Assignment3/reports/Roll-No-NS24Z347-Assignment-3--VmlldzoxMjg2NjIyNA/edit?draftId=VmlldzoxMjg2NjIyNA==
